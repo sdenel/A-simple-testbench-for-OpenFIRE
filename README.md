@@ -1,10 +1,10 @@
-#A simple testbench for OpenFIRE#
+# A simple testbench for OpenFIRE
 
 A simple testbench for the RISC, tiny and opensource softprocessor called OpenFIRE.
 
 OpenFIRE is a RISC softcore processor available on OpenCores and written in Verilog. It has the same instruction set than the Xilinx MicroBlaze processor, and is therefore compatible with a well-maintained toolchain. It can be seen both like a computing resource and like an IP. This is why I suggest here to stimulate it with assembly instructions transformed in binary, and see the result with ModelSim. Are you in a hurry? Then let's just see the result.
 
-##Principle##
+## Principle
 
 This simulation is composed of 3 main files. The *data* variable in the memory_init.py script must contain your simple program, written in assembler. Currently, it is:
 
@@ -26,12 +26,12 @@ Source code description
  - simulation.v is the testbench in Verilog
  - ModelSimLaunchSimulation.tcl launches the simulation when using ModelSim.
 
-## Final result ##
+## Final result
 Running these scripts will give you this output:
 ![A simple simulation of OpenFIRE with ModelSim](https://raw.githubusercontent.com/sdenel/A-simple-testbench-for-OpenFIRE/master/screenshots/modelsim.png)
 A simple simulation of OpenFIRE with ModelSim
 
-##Miscellaneous##
+## Miscellaneous
 
 
  - **The RISC OpenFIRE main page:** http://opencores.org/project,openfire2
